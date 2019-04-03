@@ -1,0 +1,21 @@
+summary: "Sqaure a Number"
+description: "This is a simple API which returns the square of a number"
+consumes:
+- "application/json"
+produces:
+- "application/json"
+parameters:
+- in: "body"
+  name: "body"
+  description: "Accepts a input dictionary of inputs x1 and x2"
+  required: true
+  schema:
+    type: "object"
+    properties:
+      num:
+        type: "integer"
+        format: "int64"
+        example : 212
+responses:
+  405:
+    description: "Invalid input"
